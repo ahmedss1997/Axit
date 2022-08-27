@@ -1,0 +1,10 @@
+
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+@media (max-width: 767px) {
+  .text-center-xs {
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+
+
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  .navbar-brand {
+    font-weight: bold;
+    @extend %textTransform;
+    font-size: 30px;
+    color: #FFF;
+    span {
+      font-weight: normal;
+      color: #FF9B51;
+    }
+  }
+}
+

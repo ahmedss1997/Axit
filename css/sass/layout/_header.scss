@@ -1,0 +1,105 @@
+
+.header {
+  background: url(../imges/header.png) no-repeat top center;
+  // @include prefixer (background-size, cover, moz webkit o);
+  @extend %backgroundSize;
+  height: 100vh;
+  position: relative;
+  color: $Other-color;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    // padding-top: 100px;
+    .centering-vh {
+      margin-top: 20vh;
+      @media (max-width: 767px) {
+        margin-top: 60px;
+      }
+      h1 {
+        font-size: 75px;
+        font-weight: bold;
+        @extend %textTransform;
+        span {
+          font-weight: normal;
+          color: $main-color;
+        }
+      }
+      p.lead {
+        @extend %textTransform;
+        font-size: 35px;
+        &:after {
+          content: '';
+          display: block;
+          width: 70px;
+          height: 2px;
+          background-color: $Other-color;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          @media (max-width: 767px) {
+            margin: 25px  auto;
+          }
+        }
+      }
+      p.lorem {
+        color: #BFBEBE;
+        clear: both;
+        margin-bottom: 30px;
+        padding-top: 20px;
+        line-height: 1.8;
+      }
+      button {
+        background-color: transparent;
+        padding: 10px 30px;
+        border: 2px solid $Other-color;
+      }
+      form {
+        width: 360px;
+        margin-top: 83px;
+        margin-left: 160px;
+        background-color: $Other-color;
+        border-radius: 5px;
+        overflow: hidden;
+        h2 {
+          background-color: #f5f5f5;
+          color: #333;
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 15px;
+          margin-top: 0;
+          span {
+            color: $main-color;
+          }
+        }
+        input.form-control {
+          width: 250px;
+          display: block;
+          margin: 40px 55px;
+          // color: $gray-color;
+          border: none;
+          box-shadow: none;
+          border-radius: 0;
+          border-bottom: 2px solid $gray-color;
+        }
+        input[type="submit"] {
+          padding: 15px 0;
+          background-color: $main-color;
+          border: 1px solid $main-color;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

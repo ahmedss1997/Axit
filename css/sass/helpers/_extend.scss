@@ -1,0 +1,28 @@
+
+// Classes For Extend
+
+%backgroundSize {
+  @include prefixer (background-size, cover, webkit moz o);
+}
+
+%textTransform {
+  text-transform: uppercase;
+}
+
+%boxShadow {
+  @include prefixer (box-shadow, -2px -5px 13px #000, webkit moz o);
+}
+
+%Transition {
+  @include prefixer (transition, all .5s ease-in-out, webkit moz o)
+}
+
+.head-border:after {
+  content: ' ';
+  display: block;
+  width: 65px;
+  height: 3px;
+  background-color: $main-color;
+  color: $main-color;
+  margin: 25px 0;
+}
